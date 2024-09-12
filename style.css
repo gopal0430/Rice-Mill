@@ -159,7 +159,7 @@ h1{
     text-align: center;
 }
 .gallery{
-    background-color: rgb(127, 171, 127);
+    /* background-color: rgb(127, 171, 127); */
     padding: 80px , 0;
     align-items: center;
 }
