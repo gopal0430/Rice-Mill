@@ -7,3 +7,13 @@ document.addEventListener("click",function (e){
     myModal.show();
    }
 })
+document.addEventListener('DOMContentLoaded', function() {
+   // Show the loading icon
+   const loadingIcon = document.getElementById('loading');
+   loadingIcon.style.display = 'none'; // Initially hidden
+   
+   // Show the loading icon before page unload
+   window.addEventListener('beforeunload', function() {
+     loadingIcon.style.display = 'flex';
+   });
+ });
