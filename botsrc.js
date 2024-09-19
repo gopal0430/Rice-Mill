@@ -1,7 +1,8 @@
  const chatInput = document.querySelector(".chat-input textarea");
  const sendchatBtn = document.querySelector(".chat-input span");
  const chatbox = document.querySelector(".chatbox");
-
+ const chatbotToggler = document.querySelector(".chatbot-toggler");
+ const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 const API_KEY = "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";
@@ -52,5 +53,6 @@ const handleChat = () => {
         generateResponse(incomingChatLi);
       },600);
  }
-
  sendchatBtn.addEventListener("click" , handleChat);
+ chatbotCloseBtn.addEventListener("click",() => document.body.classList.remove("show-chatbot"));
+ chatbotToggler.addEventListener("click",() => document.body.classList.toggle("show-chatbot"));
